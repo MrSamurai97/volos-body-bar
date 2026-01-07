@@ -228,9 +228,36 @@ nav ul li a:hover { color: var(--gold); }
         padding: 40px 15px !important;
     }
 }
+/* Повышаем приоритет кнопки, чтобы она всегда была кликабельна */
+.btn-cta {
+    position: relative;
+    z-index: 9999 !important; /* Выводит кнопку на самый передний план */
+    pointer-events: auto !important; /* Разрешает нажатия */
+    cursor: pointer;
+}
 
+/* Фикс для мобильной шапки, чтобы лого и кнопка не слипались */
+@media (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 10px 15px !important;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-logo {
+        height: 35px !important; /* Немного уменьшим лого, чтобы кнопка не уезжала */
+    }
+    .btn-cta {
+        font-size: 11px !important;
+        padding: 6px 10px !important;
+    }
+}
 .reveal { opacity: 0; transform: translateY(30px); transition: 1s all ease; }
 
 .reveal.active { opacity: 1; transform: translateY(0); }
+
 
 
