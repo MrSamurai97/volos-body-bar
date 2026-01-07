@@ -255,9 +255,25 @@ nav ul li a:hover { color: var(--gold); }
         padding: 6px 10px !important;
     }
 }
+/* Фикс карты для мобилок */
+.map-container {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 350px; /* Фиксируем высоту */
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 .reveal { opacity: 0; transform: translateY(30px); transition: 1s all ease; }
 
 .reveal.active { opacity: 1; transform: translateY(0); }
+
 
 
 
