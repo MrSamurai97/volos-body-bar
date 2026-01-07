@@ -201,34 +201,9 @@ nav ul li a:hover { color: var(--gold); }
     color: #000;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
-/* Специальные правки для мобильных устройств */
-@media (max-width: 480px) {
-    /* Уменьшаем главный заголовок, чтобы он не вылезал за края */
-    .hero h1 {
-        font-size: 2rem !important;
-        letter-spacing: 2px !important;
-        line-height: 1.2;
-    }
 
-    /* Делаем адрес под заголовком чуть меньше */
-    .hero p {
-        font-size: 0.8rem !important;
-        letter-spacing: 1px !important;
-    }
-
-    /* Настраиваем кнопку записи в шапке */
-    .btn-cta {
-        font-size: 10px !important;
-        padding: 5px 8px !important;
-        letter-spacing: 0 !important;
-    }
-
-    /* Уменьшаем отступы секций, чтобы контент был плотнее */
-    .price-block, .services-list {
-        padding: 40px 15px !important;
-    }
-}
 
 .reveal { opacity: 0; transform: translateY(30px); transition: 1s all ease; }
 
 .reveal.active { opacity: 1; transform: translateY(0); }
+
