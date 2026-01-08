@@ -275,13 +275,8 @@ header {
     }
 }
 
-/* Исправление карты */
-.map-container iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    filter: grayscale(1) invert(0.9); /* Оставляем стильный темный вид */
-}
+
 .reveal { opacity: 0; transform: translateY(30px); transition: 1s all ease; }
 .reveal.active { opacity: 1; transform: translateY(0); }
+
 
